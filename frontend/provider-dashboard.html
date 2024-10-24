@@ -1,101 +1,120 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HealthHero - Provider Dashboard</title>
-    <link rel="stylesheet" type="text/css" href="/css/styles.css">
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="/css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <div class="dashboard-container">
+        <aside class="dashboard-sidebar">
             <div class="logo">HealthHero</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#search">Search</a></li>
-                <li>
+            <nav class="dashboard-menu">
+                <ul>
+                    <li><a href="#profile"><i class="fas fa-user-md"></i> Profile</a></li>
+                    <li><a href="#patient-list"><i class="fas fa-users"></i> Patient List</a></li>
+                    <li><a href="#appointments"><i class="fas fa-calendar-alt"></i> Appointments</a></li>
+                    <li><a href="#messaging"><i class="fas fa-comments"></i> Messaging</a></li>
+                    <li><a href="#teleconsultations"><i class="fas fa-video"></i> Teleconsultations</a></li>
+                    <li><a href="#prescriptions"><i class="fas fa-prescription"></i> Prescriptions</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="dashboard-main">
+            <header class="dashboard-header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search patients...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="user-menu">
+                    <span class="notifications"><i class="fas fa-bell"></i></span>
                     <div class="profile">
                         <img src="path/to/provider-avatar.jpg" alt="Provider Avatar">
                         <span>Provider Name</span>
                     </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="dashboard-main">
-        <h1>Provider Dashboard</h1>
-        <nav>
-            <ul>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#patient-list">Patient List</a></li>
-                <li><a href="#appointments">Appointments</a></li>
-                <li><a href="#messaging">Messaging</a></li>
-                <li><a href="#teleconsultations">Teleconsultations</a></li>
-                <li><a href="#prescriptions">Prescriptions</a></li>
-            </ul>
-        </nav>
-
-        <section id="profile">
-            <h2>Profile</h2>
-            <!-- Provider profile information and edit form go here -->
-        </section>
-
-        <section id="patient-list">
-            <h2>Patient List</h2>
-            <!-- List of patients and their basic info goes here -->
-        </section>
-
-        <section id="appointments">
-            <h2>Appointments</h2>
-            <!-- Appointment management interface goes here -->
-        </section>
-
-        <section id="messaging">
-            <h2>Messaging</h2>
-            <!-- Messaging interface goes here -->
-        </section>
-
-        <section id="teleconsultations" class="dashboard-section">
-            <h2>Teleconsultations</h2>
-            <div class="video-conference-container">
-                <h3>Start or Join a Video Consultation</h3>
-                <div class="video-conference-options">
-                    <button id="start-zoom" class="video-conference-button zoom-button">Start Zoom Meeting</button>
-                    <button id="start-meet" class="video-conference-button meet-button">Start Google Meet</button>
                 </div>
+            </header>
+
+            <section class="quick-actions">
+                <button class="action-btn"><i class="fas fa-plus"></i> New Appointment</button>
+                <button class="action-btn"><i class="fas fa-notes-medical"></i> Patient Records</button>
+                <button class="action-btn"><i class="fas fa-video"></i> Start Consultation</button>
+            </section>
+
+            <h1>Provider Dashboard</h1>
+
+            <section class="daily-schedule">
+                <h2>Today's Schedule</h2>
+                <div class="schedule-list">
+                    <!-- Add today's appointments overview here -->
+                    <!-- This will be populated dynamically with JavaScript -->
+                </div>
+            </section>
+
+            <section id="profile">
+                <h2>Profile</h2>
+                <!-- Provider profile information and edit form go here -->
+            </section>
+
+            <section id="patient-list">
+                <h2>Patient List</h2>
+                <!-- List of patients and their basic info goes here -->
+            </section>
+
+            <section id="appointments">
+                <h2>Appointments</h2>
+                <!-- Appointment management interface goes here -->
+            </section>
+
+            <section id="messaging">
+                <h2>Messaging</h2>
+                <!-- Messaging interface goes here -->
+            </section>
+
+            <section id="teleconsultations" class="dashboard-section">
+                <h2>Teleconsultations</h2>
+                <div class="video-conference-container">
+                    <h3>Start or Join a Video Consultation</h3>
+                    <div class="video-conference-options">
+                        <button id="start-zoom" class="video-conference-button zoom-button">Start Zoom Meeting</button>
+                        <button id="start-meet" class="video-conference-button meet-button">Start Google Meet</button>
+                    </div>
+                </div>
+                <!-- Add a list of upcoming teleconsultations here -->
+            </section>
+
+            <section id="prescriptions">
+                <h2>Prescriptions</h2>
+                <!-- Prescription management interface goes here -->
+            </section>
+
+            <div class="dashboard-flex">
+                <section id="schedule" class="dashboard-section">
+                    <h2>My Schedule</h2>
+                    <div class="calendar-container">
+                        <!-- Calendar will be inserted here by JavaScript -->
+                    </div>
+                </section>
+
+                <section id="patient-locations" class="dashboard-section">
+                    <h2>Patient Locations</h2>
+                    <div class="map-container" id="provider-map">
+                        <!-- Google Maps will be inserted here by JavaScript -->
+                    </div>
+                </section>
             </div>
-            <!-- Add a list of upcoming teleconsultations here -->
-        </section>
-
-        <section id="prescriptions">
-            <h2>Prescriptions</h2>
-            <!-- Prescription management interface goes here -->
-        </section>
-
-        <div class="dashboard-flex">
-            <section id="schedule" class="dashboard-section">
-                <h2>My Schedule</h2>
-                <div class="calendar-container">
-                    <!-- Calendar will be inserted here by JavaScript -->
-                </div>
-            </section>
-
-            <section id="patient-locations" class="dashboard-section">
-                <h2>Patient Locations</h2>
-                <div class="map-container" id="provider-map">
-                    <!-- Google Maps will be inserted here by JavaScript -->
-                </div>
-            </section>
-        </div>
-    </main>
+        </main>
+    </div>
 
     <footer>
         <p>&copy; 2023 HealthHero. All rights reserved.</p>
     </footer>
 
-    <script src="/frontend/dashboard.js"></script>
+    <script type="module" src="/frontend/dashboard.js"></script>
 </body>
 </html>
+                

@@ -1,0 +1,111 @@
+/* dashboard.css */
+
+/* Color palette */
+:root {
+    --primary-color: #3498db; /* Blue */
+    --secondary-color: #2ecc71; /* Green */
+    --accent-color: #e74c3c; /* Red */
+    --text-color: #333333; /* Dark Gray */
+    --background-color: #f4f4f4; /* Light Gray */
+    --border-color: #ccc;
+}
+
+/* Typography */
+:root {
+    --font-family-base: 'Arial', sans-serif;
+    --font-family-heading: 'Helvetica Neue', sans-serif;
+    --font-size-base: 16px;
+}
+/* Dashboard-specific styles */
+.dashboard-container {
+    display: flex;
+    height: calc(100vh - 60px); /* Adjust for header height */
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+.dashboard-sidebar {
+    width: 250px;
+    background-color: var(--secondary-color);
+    padding: 20px;
+}
+
+.dashboard-sidebar h2 {
+    color: var(--primary-color);
+}
+
+.dashboard-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dashboard-sidebar li {
+    margin-bottom: 10px;
+}
+
+.dashboard-sidebar a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dashboard-sidebar a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.dashboard-main {
+    flex: 1;
+    padding: 20px;
+}
+
+.dashboard-section {
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    background-color: #fff;
+}
+
+.dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dashboard-table th, .dashboard-table td {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    text-align: left;
+}
+
+.dashboard-table th {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+
+
+.chart-container {
+    height: 300px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .dashboard-sidebar {
+        display: none;
+    }
+
+    .dashboard-main {
+        width: 100%;
+    }
+
+    /* Add more responsive styles as needed */
+}
