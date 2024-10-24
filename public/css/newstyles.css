@@ -1,0 +1,596 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #E9F1FA;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    color: #00ABE4;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  h4 {
+    font-size: 20px;
+  }
+  
+  h5 {
+    font-size: 18px;
+  }
+  
+  h6 {
+    font-size: 16px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #00ABE4;
+  }
+  
+  a:hover {
+    color: #0077B5;
+  }
+  
+  button {
+    background-color: #00ABE4;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0077B5;
+  }
+  
+  /* Header Styles */
+  
+  header {
+    background-color: #00ABE4;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin-right: 20px;
+  }
+  
+  header nav a {
+    color: #FFFFFF;
+  }
+  
+  header nav a:hover {
+    color: #0077B5;
+  }
+  
+  /* Admin Dashboard Styles */
+  
+  .admin-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .admin-dashboard h1 {
+    margin-bottom: 20px;
+  }
+  
+  .admin-dashboard nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .admin-dashboard nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .admin-dashboard nav ul li {
+    margin-right: 20px;
+  }
+  
+  .admin-dashboard nav a {
+    color: #333;
+  }
+  
+  .admin-dashboard nav a:hover {
+    color: #00ABE4;
+  }
+  
+  .admin-dashboard-section {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .admin-dashboard-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Provider Dashboard Styles */
+  
+  .provider-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .provider-dashboard h1 {
+    margin-bottom: 20px;
+  }
+  
+  .provider-dashboard nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .provider-dashboard nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .provider-dashboard nav ul li {
+    margin-right: 20px;
+  }
+  
+  .provider-dashboard nav a {
+    color: #333;
+  }
+  
+  .provider-dashboard nav a:hover {
+    color: #00ABE4;
+  }
+  
+  .provider-dashboard-section {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .provider-dashboard-section h2 {
+    margin-bottom: 20px;
+  }
+  
+ /* Patient Dashboard Styles */
+
+.patient-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .patient-dashboard h1 {
+    margin-bottom: 20px;
+  }
+  
+  .patient-dashboard nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .patient-dashboard nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .patient-dashboard nav ul li {
+    margin-right: 20px;
+  }
+  
+  .patient-dashboard nav a {
+    color: #333;
+  }
+  
+  .patient-dashboard nav a:hover {
+    color: #00ABE4;
+  }
+  
+  .patient-dashboard-section {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .patient-dashboard-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Profile Section Styles */
+  
+  .profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .profile-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .profile-section img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .profile-section p {
+    margin-bottom: 20px;
+  }
+  
+  /* Doctor Search Section Styles */
+  
+  .doctor-search-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .doctor-search-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .doctor-search-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .doctor-search-section button {
+    background-color: #00ABE4;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .doctor-search-section button:hover {
+    background-color: #0077B5;
+  }
+  
+  /* Appointments Section Styles */
+  
+  .appointments-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .appointments-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .appointments-section table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .appointments-section th, .appointments-section td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .appointments-section th {
+    background-color: #00ABE4;
+    color: #FFFFFF;
+  }
+  
+  /* Medical Records Section Styles */
+  
+  .medical-records-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .medical-records-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .medical-records-section table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .medical-records-section th, .medical-records-section td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .medical-records-section th {
+    background-color: #00ABE4;
+    color: #FFFFFF;
+  }
+  
+  /* Messaging Section Styles */
+  
+  .messaging-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .messaging-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .messaging-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .messaging-section button {
+    background-color: #00ABE4;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .messaging-section button:hover {
+    background-color: #0077B5;
+  }
+  
+  /* Teleconsultations Section Styles */
+  
+  .teleconsultations-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .teleconsultations-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .teleconsultations-section button {
+    background-color: #00ABE4;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .teleconsultations-section button:hover {
+    background-color: #0077B5;
+  }
+  /* Footer Styles */
+
+footer {
+    background-color: #00ABE4;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin-bottom: 20px;
+  }
+  
+  footer a {
+    color: #FFFFFF;
+  }
+  
+  footer a:hover {
+    color: #0077B5;
+  }
+  
+  /* Login and Registration Pages Styles */
+  
+  .login-page, .register-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .login-page h2, .register-page h2 {
+    margin-bottom: 20px;
+  }
+  
+  .login-page form, .register-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .login-page input, .register-page input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .login-page button, .register-page button {
+    background-color: #00ABE4;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-page button:hover, .register-page button:hover {
+    background-color: #0077B5;
+  }
+  
+  /* Forgot Password Page Styles */
+  
+  .forgot-password-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .forgot-password-page h2 {
+    margin-bottom: 20px;
+  }
+  
+  .forgot-password-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .forgot-password-page input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .forgot-password-page button {
+    background-color: #00ABE4;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .forgot-password-page button:hover {
+    background-color: #0077B5;
+  }
+  
+  /* Reset Password Page Styles */
+  
+  .reset-password-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .reset-password-page h2 {
+    margin-bottom: 20px;
+  }
+  
+  .reset-password-page form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .reset-password-page input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .reset-password-page button {
+    background-color: #00ABE4;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .reset-password-page button:hover {
+    background-color: #0077B5;
+  }
+  
+  /* Error Pages Styles */
+  
+  .error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .error-page h2 {
+    margin-bottom: 20px;
+  }
+  
+  .error-page p {
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Styles */
+  
+  @media only screen and (max-width: 768px) {
+    /* Add responsive styles for smaller screens */
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* Add responsive styles for even smaller screens */
+  }

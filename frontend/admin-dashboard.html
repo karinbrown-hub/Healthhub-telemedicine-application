@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthHero - Admin Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">HealthHero</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#search">Search</a></li>
+                <li>
+                    <div class="profile">
+                        <img src="path/to/admin-avatar.jpg" alt="Admin Avatar">
+                        <span>Admin Name</span>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard-main">
+        <h1>Admin Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#user-management">User Management</a></li>
+                <li><a href="#provider-management">Provider Management</a></li>
+                <li><a href="#appointment-management">Appointment Management</a></li>
+                <li><a href="#financial-reports">Financial Reports</a></li>
+            </ul>
+        </nav>
+
+        <section id="overview">
+            <h2>Overview</h2>
+            <div class="stats">
+                <!-- Placeholder for platform usage statistics -->
+            </div>
+        </section>
+
+        <section id="user-management">
+            <h2>User Management</h2>
+            <!-- User management tools go here -->
+        </section>
+
+        <section id="provider-management">
+            <h2>Provider Management</h2>
+            <!-- Provider management tools go here -->
+        </section>
+
+        <section id="appointment-management">
+            <h2>Appointment Management</h2>
+            <!-- Appointment management tools go here -->
+        </section>
+
+        <section id="financial-reports">
+            <h2>Financial Reports</h2>
+            <!-- Financial reporting tools go here -->
+        </section>
+
+        <div class="dashboard-flex">
+            <section id="calendar" class="dashboard-section">
+                <h2>Appointment Calendar</h2>
+                <div class="calendar-container">
+                    <!-- Calendar will be inserted here by JavaScript -->
+                </div>
+            </section>
+
+            <section id="location-analytics" class="dashboard-section">
+                <h2>Location Analytics</h2>
+                <div class="map-container" id="admin-map">
+                    <!-- Google Maps will be inserted here by JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 HealthHero. All rights reserved.</p>
+    </footer>
+
+    <script src="/frontend/dashboard.js"></script>
+</body>
+</html>
